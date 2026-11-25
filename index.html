@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <title>Web Services Shop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Affordable website builds by HellenicDev: Simple, Advanced and Extreme packages from €5.">
+  <meta name="author" content="HellenicDev">
+  <meta name="theme-color" content="#19336e">
+  <meta property="og:title" content="Website Build Services | HellenicDev">
+  <meta property="og:description" content="Affordable website builds: Simple, Advanced and Extreme packages from €5.">
+  <meta property="og:image" content="https://hellenicdev.eu/og-image.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="https://hellenicdev.eu/favicon.ico" sizes="any">
   <link rel="canonical" href="https://hellenicdev.eu/e-shop/">
   <meta property="og:url" content="https://hellenicdev.eu/e-shop/">
 
@@ -58,14 +66,51 @@
 
     .features {
       font-size: 0.9rem;
-      margin-bottom: 15px;
-      opacity: 0.9;
+      margin: 0 0 15px;
+      padding: 0;
+      list-style: none;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+
+    .card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.4);
+    }
+
+    .site-logo {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 52px;
+      height: auto;
+      z-index: 10;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #38bdf8;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 560px) {
+      header { padding: 72px 16px 16px; }
+      header h1 { font-size: 1.7rem; }
+      .card { width: 100%; max-width: 320px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .card { transition: none; }
+      .card:hover { transform: none; }
     }
 
     .btn-placeholder {
       display: inline-block;
       padding: 10px 15px;
-      background: #22c55e;
+      background: #15803d;
       color: white;
       border-radius: 8px;
       text-decoration: none;
@@ -74,70 +119,69 @@
     }
 
     .btn-placeholder:hover {
-      background: #16a34a;
+      background: #166534;
     }
 
     footer {
       margin-top: 40px;
       padding: 20px;
       font-size: 0.8rem;
-      opacity: 0.7;
+      color: #94a3b8;
     }
   </style>
 </head>
 
 <body>
 
+<a href="https://hellenicdev.eu/"><img src="https://hellenicdev.eu/logo.webp" alt="HellenicDev home" class="site-logo" width="52" height="52"></a>
+
 <header>
   <h1>🚀 Website Build Services</h1>
   <p>Choose the package that fits your needs</p>
 </header>
 
-<div class="container">
+<main class="container">
 
   <div class="card">
     <h2>Simple Build</h2>
     <div class="price">€5</div>
-    <div class="features">
-      Basic landing page<br>
-      Responsive design<br>
-      1 revision
-    </div>
+    <ul class="features">
+      <li>Basic landing page</li>
+      <li>Responsive design</li>
+      <li>1 revision</li>
+    </ul>
 
-    <!-- PayPal placeholder -->
-    <a class="btn-placeholder" href="#">Pay with PayPal</a>
+    <a class="btn-placeholder" href="mailto:ikonpanos@gmail.com?subject=Simple%20Build%20order">Order the Simple Build</a>
   </div>
 
   <div class="card">
     <h2>Advanced Build</h2>
     <div class="price">€10</div>
-    <div class="features">
-      Multi-section website<br>
-      Better UI styling<br>
-      3 revisions
-    </div>
+    <ul class="features">
+      <li>Multi-section website</li>
+      <li>Better UI styling</li>
+      <li>3 revisions</li>
+    </ul>
 
-    <!-- PayPal placeholder -->
-    <a class="btn-placeholder" href="#">Pay with PayPal</a>
+    <a class="btn-placeholder" href="mailto:ikonpanos@gmail.com?subject=Advanced%20Build%20order">Order the Advanced Build</a>
   </div>
 
   <div class="card">
     <h2>Extreme Build</h2>
     <div class="price">€15</div>
-    <div class="features">
-      Full custom website<br>
-      Animations + extras<br>
-      Unlimited tweaks (small scope)
-    </div>
+    <ul class="features">
+      <li>Full custom website</li>
+      <li>Animations + extras</li>
+      <li>Unlimited tweaks (small scope)</li>
+    </ul>
 
-    <!-- PayPal placeholder -->
-    <a class="btn-placeholder" href="#">Pay with PayPal</a>
+    <a class="btn-placeholder" href="mailto:ikonpanos@gmail.com?subject=Extreme%20Build%20order">Order the Extreme Build</a>
   </div>
 
-</div>
+</main>
 
 <footer>
-  © 2026 Your Name — Web Services
+  &copy; 2026 HellenicDev &mdash; Web Services
 </footer>
 
 </body>
